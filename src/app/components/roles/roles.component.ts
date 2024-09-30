@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './roles.component.css'
 })
 export class RolesComponent {
-
+// string, number,boolean, date, object, array, null, undefined
 }
