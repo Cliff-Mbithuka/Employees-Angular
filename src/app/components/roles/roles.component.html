@@ -1,5 +1,5 @@
 <p>roles works!</p>
-// interpolation
+
 <div class="row">
     <div class="col-3">
         <p>{{firstName}}</p>
@@ -10,15 +10,40 @@
     <div class="col-3">
         <p>{{currentDate}}</p>
     </div>
+    <div class="col-3">
+        {{selectedState}}
+    </div>
 </div>
 
-// property binding
+
 <div class="row">
     <div class="col-3">
         <input type="text" [value]="firstName" class="form-control">
     </div>
+
+    <div class="col-3">
+        <input type="text" [(ngModel)]="firstName"/>
+    </div>
     <div class="col-3">
         <input [type]="inputType"/>
     </div>
+    <div class="col-3">
+        <select [(ngModel)]="selectedState">
+            <option value="MH">MH</option>
+            <option value="MP">MP</option>
+            <option value="Goa">Goa</option>
+        </select>
+    </div>
 </div>
 
+<div class="row">
+    <div class="col-3">
+        <button class="btn btn-success" (click)="showWelcomeAlert()">Show alert</button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-success" (click)="showMessage('Welcome React')">Show react Msg</button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-success" (click)="showMessage('Welcome Dot Net')">Show Dot net msg</button>
+    </div>
+</div>
