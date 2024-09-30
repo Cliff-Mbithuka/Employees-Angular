@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class RolesComponent {
 // string, number,boolean, date, object, array, null, undefined
+firstName: string = "Angular Tutorial";
+angularVersion = "Version18";
+version: number = 18;
+isActive : boolean = false;
+currentDate: Date = new Date();
+inputType: string = "radio";
 }
